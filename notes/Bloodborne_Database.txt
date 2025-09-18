@@ -1,0 +1,6 @@
+to add elemental gems, do something like 
+if {baseArc == 0}
+    switch gems
+      case 1stgem:
+         baseArc = the base arc that the gem gives;
+            arcInc = same thing but arcInc not base;
