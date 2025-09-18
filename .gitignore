@@ -4,4 +4,5 @@ CMakeCache.txt
 build.ninja
 a.out
 cmake_install.cmake
-
+.ninja_deps
+.ninja_log
