@@ -1,3 +1,0 @@
-/home/nicholasmilligan/bloodbornedb/CMakeFiles/BloodborneCalc.dir
-/home/nicholasmilligan/bloodbornedb/CMakeFiles/edit_cache.dir
-/home/nicholasmilligan/bloodbornedb/CMakeFiles/rebuild_cache.dir
