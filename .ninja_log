@@ -1,15 +1,9 @@
 # ninja log v5
-4	165	1758216941093145283	CMakeFiles/BloodborneDB.dir/main.c.o	7b1260a7a9ba2dcf
-184	310	1758216941236145283	BloodborneDB	d1202664feba9727
-6	111	1758216941039145283	CMakeFiles/BloodborneDB.dir/weapon_data.c.o	951f81230cc2a72e
-18	184	1758216941110145283	CMakeFiles/BloodborneDB.dir/damage.c.o	6ec1452b9c65fa79
-1	34	1758224727259145747	build.ninja	ce8dfa396527fa45
-4	208	1758224727259145747	build.ninja	ff001c2bd2367ac7
-10	104	1758224727396145747	CMakeFiles/BloodborneDB.dir/weapon_data.c.o	951f81230cc2a72e
-6	195	1758224727487145747	CMakeFiles/BloodborneDB.dir/main.c.o	7b1260a7a9ba2dcf
-19	229	1758224727522145747	CMakeFiles/BloodborneDB.dir/damage.c.o	6ec1452b9c65fa79
-229	384	1758224727674145747	BloodborneDB	37f08bb4d38b8137
-21	199	1758224909303145758	CMakeFiles/BloodborneDB.dir/weapon_data.c.o	951f81230cc2a72e
+25	269	1758226623746298055	build.ninja	ff001c2bd2367ac7
 30	251	1758224909354145758	CMakeFiles/BloodborneDB.dir/damage.c.o	6ec1452b9c65fa79
+21	199	1758224909303145758	CMakeFiles/BloodborneDB.dir/weapon_data.c.o	951f81230cc2a72e
 7	279	1758224909384145758	CMakeFiles/BloodborneDB.dir/main.c.o	7b1260a7a9ba2dcf
-279	440	1758224909544145758	BloodborneDB	37f08bb4d38b8137
+221	356	1758226411246298042	BloodborneCalc	970e101be0a17572
+6	112	1758226411002298042	CMakeFiles/BloodborneCalc.dir/weapon_data.c.o	ecdf97f18bd93e0
+10	220	1758226411108298042	CMakeFiles/BloodborneCalc.dir/damage.c.o	3d4ceb61ce66889b
+3	206	1758226411094298042	CMakeFiles/BloodborneCalc.dir/main.c.o	67eac7139ed58e03
