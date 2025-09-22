@@ -48,5 +48,9 @@ int main() {
   calcDamage(&weapons[userChoice], weaponLevel, userStr, userSkill,
              userBloodtinge, userArc);
 
+  printf("\nPress enter to exit");
+
+  getchar();
+
   return 0;
 }
