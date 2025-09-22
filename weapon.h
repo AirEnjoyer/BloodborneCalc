@@ -44,6 +44,4 @@ typedef struct {
 
 extern Weapon weapons[28];
 
-extern int bloodLevel;
-
 #endif

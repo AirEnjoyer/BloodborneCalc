@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 void calcDamage(const Weapon *w, int weaponLevel, int userStr, int userSkill,
-                int userBloodtinge, int userArc);
+                int userBloodtinge, int userArc, int bloodLevel);
 
 int main() {
 
@@ -46,9 +46,15 @@ int main() {
   scanf("%d", &bloodLevel);
 
   calcDamage(&weapons[userChoice], weaponLevel, userStr, userSkill,
-             userBloodtinge, userArc);
+             userBloodtinge, userArc, bloodLevel);
 
   printf("\nPress enter to exit");
+
+  fflush(stdout);
+
+  int c;
+  while ((c = getchar()) != '\n' && c != EOF)
+    ;
 
   getchar();
 

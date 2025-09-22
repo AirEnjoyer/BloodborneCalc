@@ -3,8 +3,6 @@
 #include <stdio.h>
 #include <string.h>
 
-int bloodLevel = 0;
-
 float getSat(int inputStat) {
   float sat;
   if (inputStat >= 5 && inputStat <= 10) {
@@ -23,7 +21,7 @@ float getSat(int inputStat) {
   return sat;
 }
 
-void getVisceralDamage(int skill, float *initThrustDamage,
+void getVisceralDamage(int skill, int bloodLevel, float *initThrustDamage,
                        float *parryViscDamage, float *breakViscDamage) {
   float visceralSat = 0;
 
@@ -118,7 +116,7 @@ void getVisceralDamage(int skill, float *initThrustDamage,
 }
 
 void calcDamage(const Weapon *w, int weaponLevel, int userStr, int userSkill,
-                int userBloodtinge, int userArc) {
+                int userBloodtinge, int userArc, int bloodLevel) {
 
   int effectiveLevel = weaponLevel;
 
@@ -157,7 +155,7 @@ void calcDamage(const Weapon *w, int weaponLevel, int userStr, int userSkill,
 
   float arcDamage = (baseArc + (weaponArcScale * arcSat));
 
-  if (strcmp(w->name, "Holy Moonlight Sword")) {
+  if (strcmp(w->name, "Holy Moonlight Sword") == 0) {
     float holyGSwordR1Arc = 0.50;
     float holyGSwordR2Arc = 0.65f;
     float holyGSwordChargedR2Arc = 0.9f;
@@ -187,7 +185,7 @@ void calcDamage(const Weapon *w, int weaponLevel, int userStr, int userSkill,
             arcDamage * transformedHolyGSwordTransformArc));
   }
 
-  else if (strcmp(w->name, "Whirligig Saw")) {
+  else if (strcmp(w->name, "Whirligig Saw") == 0) {
     if (arcDamage == 0) {
       printf("R1: %f\n", w->r1);
       printf("R2: %f\n", w->tapR2);
@@ -215,7 +213,7 @@ void calcDamage(const Weapon *w, int weaponLevel, int userStr, int userSkill,
     }
   }
   float initThrustDamage, parryViscDamage, breakViscDamage;
-  getVisceralDamage(userSkill, &initThrustDamage, &parryViscDamage,
+  getVisceralDamage(userSkill, bloodLevel, &initThrustDamage, &parryViscDamage,
                     &breakViscDamage);
   printf("Viscerals:\n");
   printf("Initial thrust damage: %f\n", initThrustDamage);
