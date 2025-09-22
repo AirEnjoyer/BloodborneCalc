@@ -1,10 +1,13 @@
 #include "weapon.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 void calcDamage(const Weapon *w, int weaponLevel, int userStr, int userSkill,
                 int userBloodtinge, int userArc, int bloodLevel);
 
 int main() {
+
+  system("clear");
 
   int amountOfWeapons = sizeof(weapons) / sizeof(weapons[0]);
 
